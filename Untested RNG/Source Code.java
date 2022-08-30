@@ -1,9 +1,18 @@
 /*
-Infragile lock
+AES Blowfish Serpent for MCUs
 Distributed under the MIT License
 © Copyright Maxim Bortnikov 2022
 For more information please visit
-https://github.com/Northstrix/Infragile_lock
+https://github.com/Northstrix/AES_Blowfish_Serpent_for_MCUs
+Required libraries:
+https://github.com/zhouyangchao/AES
+https://github.com/peterferrie/serpent
+https://github.com/ddokkaebi/Blowfish
+https://github.com/intrbiz/arduino-crypto
+Successfully tested on:
+  *ESP8266: 700 chars;
+  *ESP32: 1900 chars;
+  *Raspberry Pi Pico: 16 000 chars.
 */
 /*
 Twinkle
