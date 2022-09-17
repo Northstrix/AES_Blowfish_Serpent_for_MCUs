@@ -681,6 +681,7 @@ void loop() {
     while (str_len > p + 1) {
       split_by_sixteen(input_arr, p, str_len);
       p += 16;
+      incr_serp_key();
     }
     Serial.println();
     rest_AES_k();
@@ -700,6 +701,7 @@ void loop() {
     while (ct_len > ext) {
       split_for_decryption(ct_array, ct_len, 0 + ext);
       ext += 32;
+      incr_serp_key();
     }
     Serial.println("Plaintext:");
     Serial.println(dec_st);
